@@ -1,8 +1,9 @@
 const countries_link = "https://restcountries.com/v3.1/all"
 
 async function fetchData(reg = "all",search="none") {
+    let para1 = reg
+    let para2 = search
     try{
-        
         const response = await fetch(countries_link)
         data = await response.json()
         const container = document.getElementById("container")
@@ -108,7 +109,7 @@ async function fetchData(reg = "all",search="none") {
             }
         } 
     }catch (error){
-        console.log(error.message)
+        fetchData(para1,para2)
     }
 }
 
