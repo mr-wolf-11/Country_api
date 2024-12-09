@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+.nav{
+    height:11.5svh;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    padding-left: 6%;
+    background-color: rgba(255, 255, 255, 0.044);
+    justify-content: space-between;
+    padding-right: 7%;
+    h1{
+        font-size: 1.6rem;
+    }
+    #toggle{
+        height: 70%;
+        width: 10%;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        gap: 5px;
+        font-weight: 600;
+        .logo{
+            height: 30px;
+            width:30px;
+        }
+    }
+}
+.tools{
+    margin-top: 6.9svh;
+    height: 8.3svh;
+    display: flex;
+    justify-content: space-between;
+    #search{
+        height: 100%;
+        width: 33.5%;
+        margin-left: 5%;
+        border-radius: 5px;
+        border: 0;
+        box-shadow: 0 0 3px rgba(0,0,0,0.2);
+        padding-left: 5%;
+        font-size: 1.1rem;
+        background-color: rgba(255, 255, 255, 0.044);
+        color: rgba(0, 0, 0, 0.489);
+    }
+    #region{
+        font-size: 1rem;
+        padding: 1em 8em 1em 1.8em;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        border: none;
+        margin-right: 7%;
+        text-align: left;
+        background-color: rgba(255, 255, 255, 0.044);
+
+    }
+}
+#container{
+    height: 73.3svh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 5.2%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* justify-content: center; */
+    gap: 5.45%;
+    .card{
+        margin-top: 3.5%;
+        height: 66.5%;
+        width:19.2%;
+        justify-self: left;
+        box-shadow:  0 0 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.142);
+
+        .flag{
+            height: 47.5%;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 5px 5px 0 0;
+            }
+        }
+        .details{
+            font-family: sans-serif;
+            height: 52.5%;
+            .name{
+                padding-left: 9%;
+                margin-top: 11%;
+                height: 11%;
+                width: 100%;
+            }
+            .details-2{
+                height: 40%;
+                margin-top: 5.5%;
+                display: flex;
+                flex-direction: column;
+                .fields{
+                    display: flex;
+                    height: 20%;
+                    margin: 1.8% 0;
+                    padding-left: 9%;
+                    gap: 2px;
+                    .type{
+                        font-weight: 600;
+                        font-size: 0.9rem;
+                    }
+                    .value{
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card:hover{
+    scale: 1.1;
+    transition: ease-in-out;
+    transition-duration: 0.15s;
+}
